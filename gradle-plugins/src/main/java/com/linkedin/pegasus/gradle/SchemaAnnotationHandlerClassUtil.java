@@ -150,7 +150,8 @@ public class SchemaAnnotationHandlerClassUtil
       try
       {
         clazz = classForName(clazzName);
-      } catch (Exception | Error e)
+      }
+      catch (Exception | Error e)
       {
         LOGGER.info("During search for annotation handlers, encountered an unexpected exception or error [{}] when instantiating the class, " +
             "will skip checking this class: [{}]", e.getClass(), clazzName);
